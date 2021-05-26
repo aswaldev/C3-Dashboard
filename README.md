@@ -17,6 +17,7 @@ How to use:
 
 The web page will open the dashboard in focus. User can click on tabs(HomeWork Progress, LeaderBoard, etc) to navigate around different panes.
 Clicking on the bell icon on the top nav bar will open the notification pane.
+In the Task pane. Click on any task to mark it as complete.
 Dropdown arrow on top right corner is also funcitonal.
 
 All buttons excluding the ones mentioned above are disabled.
