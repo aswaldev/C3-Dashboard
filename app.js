@@ -24,7 +24,6 @@ function drawPieChart() {
 }
 
 function drawLineChart() {
-  // Define the chart to be drawn.
   var data = new google.visualization.DataTable();
         data.addColumn('string', 'Day');
         data.addColumn('number', 'This Week');
@@ -58,7 +57,6 @@ function drawLineChart() {
     }
 
   };
-  // Instantiate and draw the chart.
   var chart = new google.visualization.LineChart(document.getElementById('LineChart'));
   chart.draw(data, options);
 }
