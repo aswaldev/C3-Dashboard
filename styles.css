@@ -89,3 +89,13 @@ a {
   background-color: white;
   box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
 }
+
+.checkbox{
+  width:5%;
+}
+
+.task{
+  width: 95%;
+}
+
+/* #F8F9FA */

@@ -14,6 +14,8 @@
   <!-- Montserrat font family -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- Google charts -->
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
 
   <title>C3-Dashboard</title>
 </head>
@@ -103,32 +105,7 @@
             <a href="#" class="nav-link py-3"><i class="fas fa-home"></i><br>Home</a>
           </li>
           <li class="nav-item">
-            <a href="#offcanvasWithBackdrop2" class="nav-link active py-3" data-bs-toggle="offcanvas" role="button"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
-            <div class="offcanvas offcanvas-start sub-sidebar" tabindex="-1" id="offcanvasWithBackdrop2" aria-labelledby="offcanvasWithBackdropLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">DashBoard</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-
-                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-
-                  <li class="nav-item"><a href="UpcomingLessons.html" class="nav-link py-3">Upcoming Lessons</a></li>
-
-                  <li class="nav-item"><a href="#" class="nav-link py-3">Tasks</a></li>
-
-                  <li class="nav-item"><a href="LeaderBoard.html" class="nav-link py-3">LeaderBoard</a></li>
-
-                  <li class="nav-item"><a href="MyCourses.html" class="nav-link py-3">My Courses</a></li>
-
-                  <li class="nav-item"><a href="Graphs.html" class="nav-link py-3">Graphs</a></li>
-
-                  <li class="nav-item"><a href="#" class="nav-link py-3">TimeTable</a></li>
-
-                  <li class="nav-item"><a href="#" class="nav-link py-3">HomeWork Progress</a></li>
-                </ul>
-              </div>
-            </div>
+            <a href="#" class="nav-link py-3 active"><i class="fas fa-tachometer-alt"></i><br>Dashboard</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link py-3"><i class="fas fa-school"></i><br>Enrollments</a>
@@ -144,64 +121,279 @@
 
       <!-- main area -->
       <div class="container-fluid col-md-10">
-        <h2>HomeWork Progress</h2>
-        <div class="row custom-row">
-          <div class="col-md-4">
-            <h3>Date</h3>
-            <p class="text-muted">Time</p>
+        <h2>Dash Board</h2>
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-UpcomingLessons-tab" data-bs-toggle="tab" data-bs-target="#UpcomingLessons" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Upcoming Lessons</button>
+            <button class="nav-link" id="nav-Tasks-tab" data-bs-toggle="tab" data-bs-target="#Tasks" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Tasks</button>
+            <button class="nav-link" id="nav-LeaderBoard-tab" data-bs-toggle="tab" data-bs-target="#LeaderBoard" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">LeaderBoard</button>
+            <button class="nav-link" id="nav-MyCourses-tab" data-bs-toggle="tab" data-bs-target="#MyCourses" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">My Courses</button>
+            <button class="nav-link" id="nav-Graphs-tab" data-bs-toggle="tab" data-bs-target="#Graphs" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Graphs</button>
+            <button class="nav-link" id="nav-TimeTable-tab" data-bs-toggle="tab" data-bs-target="#TimeTable" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Time Table</button>
+            <button class="nav-link" id="nav-HomeworkProgress-tab" data-bs-toggle="tab" data-bs-target="#HomeworkProgress" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Homework Progress</button>
           </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Subject</h5>
-              <p class="card-text text-muted"> subheading</p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="UpcomingLessons" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Time</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                </div>
+              </div>
+            </div>
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Time</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                </div>
+              </div>
+            </div>
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Time</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-2">
-            <i class="fas fa-chevron-right fa-2x"></i>
-          </div>
-        </div>
-        <div class="row custom-row">
-          <div class="col-md-4">
-            <h3>Date</h3>
-            <p class="text-muted">Time</p>
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Subject</h5>
-              <p class="card-text text-muted"> subheading</p>
-              <div class="progress">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="tab-pane fade" id="Tasks" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="list-group-flush">
+              <label class="list-group-item list-group-item-action " aria-current="true">
+                <div class="row">
+                  <div class="checkbox">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                  </div>
+                  <div class="task">
+
+                    <div class="d-flex justify-content-between">
+                      <h5 class="mb-1">Task</h5>
+                      <small class="justify-content-end">3 days ago</small>
+                    </div>
+                    <p class="mb-1">description</p>
+                    <small>remarks</small>
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item list-group-item-action " aria-current="true">
+                <div class="row">
+                  <div class="checkbox">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                  </div>
+                  <div class="task">
+
+                    <div class="d-flex justify-content-between">
+                      <h5 class="mb-1">Task</h5>
+                      <small class="justify-content-end">3 days ago</small>
+                    </div>
+                    <p class="mb-1">description</p>
+                    <small>remarks</small>
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item list-group-item-action " aria-current="true">
+                <div class="row">
+                  <div class="checkbox">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                  </div>
+                  <div class="task">
+
+                    <div class="d-flex justify-content-between">
+                      <h5 class="mb-1">Task</h5>
+                      <small class="justify-content-end">3 days ago</small>
+                    </div>
+                    <p class="mb-1">description</p>
+                    <small>remarks</small>
+                  </div>
+                </div>
+              </label>
+              <label class="list-group-item list-group-item-action " aria-current="true">
+                <div class="row">
+                  <div class="checkbox">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                  </div>
+                  <div class="task">
+
+                    <div class="d-flex justify-content-between">
+                      <h5 class="mb-1">Task</h5>
+                      <small class="justify-content-end">3 days ago</small>
+                    </div>
+                    <p class="mb-1">description</p>
+                    <small>remarks</small>
+                  </div>
+                </div>
+              </label>
             </div>
           </div>
-          <div class="col-md-2">
-            <i class="fas fa-chevron-right fa-2x"></i>
-          </div>
-        </div>
-        <div class="row custom-row">
-          <div class="col-md-4">
-            <h3>Date</h3>
-            <p class="text-muted">Time</p>
-          </div>
-          <div class="col-md-6">
-            <div class="card-body">
-              <h5 class="card-title">Subject</h5>
-              <p class="card-text text-muted"> subheading</p>
-              <div class="progress">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="tab-pane fade" id="LeaderBoard" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="row">
+              <div class="dropdown col-md-2">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Subject
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Subject1</a></li>
+                  <li><a class="dropdown-item" href="#">Subject2</a></li>
+                  <li><a class="dropdown-item" href="#">Subject3</a></li>
+                </ul>
               </div>
             </div>
+            <table class="table">
+              <thead class="table-info">
+                <tr>
+                  <th class="text-muted">Rank</th>
+                  <th class="text-muted">Name</th>
+                  <th class="text-muted">Best Score</th>
+                  <th class="text-muted">Points</th>
+                </tr>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <td>Student</td>
+                  <td>98</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Student</td>
+                  <td>98</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Student</td>
+                  <td>98</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <td>Student</td>
+                  <td>98</td>
+                  <td>2000</td>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <td>Student</td>
+                  <td>98</td>
+                  <td>2000</td>
+                </tr>
+              </tbody>
+              </thead>
+            </table>
           </div>
-          <div class="col-md-2">
-            <i class="fas fa-chevron-right fa-2x"></i>
+          <div class="tab-pane fade" id="MyCourses" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="row">
+
+              <div class="card col-md-3 custom-card bg-body" style="max-width: 18rem;">
+                <div class="card-header bg-white">
+                  <h6 class="text-muted" style="font-size: .75rem;">Advanced</h6>
+                  <h5 class="card-title">Subject</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-muted">by
+                  </p>
+                  <h5>Prof</h5>
+                </div>
+              </div>
+
+              <div class="card col-md-3 custom-card bg-body" style="max-width: 18rem;">
+                <div class="card-header bg-white">
+                  <h6 class="text-muted" style="font-size: .75rem;">Advanced</h6>
+                  <h5 class="card-title">Subject</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text text-muted">by
+                  </p>
+                  <h5>Prof</h5>
+                </div>
+              </div>
+
+              <i href="#" class="fas fa-plus fa-4x col-md-3 btn"></i>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="Graphs" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="row">
+              <div class=" col-md-4 graph" id="PieChart"></div>
+              <div class=" col-md-6 graph" id="LineChart"></div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="TimeTable" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+          <div class="tab-pane fade" id="HomeworkProgress" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Deadline</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </div>
+            </div>
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Deadline</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </div>
+            </div>
+            <div class="row custom-row">
+              <div class="col-md-4">
+                <h3>Date</h3>
+                <p class="text-muted">Deadline</p>
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Subject</h5>
+                  <p class="card-text text-muted"> subheading</p>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>

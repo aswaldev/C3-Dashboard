@@ -1,6 +1,4 @@
 google.charts.load('current', {packages: ['corechart']});
-google.charts.setOnLoadCallback(drawLineChart);
-google.charts.setOnLoadCallback(drawPieChart);
 
 function drawPieChart() {
   var data = google.visualization.arrayToDataTable([
@@ -63,4 +61,12 @@ function drawLineChart() {
   // Instantiate and draw the chart.
   var chart = new google.visualization.LineChart(document.getElementById('LineChart'));
   chart.draw(data, options);
+}
+
+document.getElementById('nav-Graphs-tab').onclick = function(){
+  setTimeout(function(){
+    drawLineChart();
+    drawPieChart();
+
+  },180);
 }
