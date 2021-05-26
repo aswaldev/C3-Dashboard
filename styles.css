@@ -9,6 +9,7 @@ a {
 /* navbar */
 .navbar{
   background-color: white;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
 .spacer {
@@ -41,9 +42,8 @@ a {
   font-size: 0.75rem;
   background-color: white;
   height: 100%;
-  width:3rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
-
 
 .sub-sidebar {
   width:11rem;
@@ -66,6 +66,7 @@ a {
 .custom-card{
   margin: 1rem 0.5rem;
   border-radius: 1rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.1);
 }
 
 .fa-plus {
@@ -74,6 +75,7 @@ a {
 
 .graph {
   margin:0.5rem;
-  padding: 0;
+  padding:1rem;
   border-radius: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }

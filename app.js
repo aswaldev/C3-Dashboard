@@ -14,10 +14,11 @@ function drawPieChart() {
 
   var options = {
     title: 'My Daily Activities',
-    width:400,
     is3D: true,
-    fontName: 'Montserrat'
-
+    fontName: 'Montserrat',
+    titleTextStyle: {
+      fontSize: 20,
+    },
   };
 
   var chart = new google.visualization.PieChart(document.getElementById('PieChart'));
@@ -44,8 +45,7 @@ function drawLineChart() {
 
   var options = {
     title: 'Time Spent',
-    width:700,
-    height:350,
+    height:300,
     legend: 'bottom',
     curveType: 'function',
 
@@ -54,7 +54,11 @@ function drawLineChart() {
       easing: 'out',
       startup: true
     },
-    fontName: 'Montserrat'
+    fontName: 'Montserrat',
+    titleTextStyle: {
+      fontSize: 20,
+    }
+
   };
   // Instantiate and draw the chart.
   var chart = new google.visualization.LineChart(document.getElementById('LineChart'));
