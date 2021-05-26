@@ -61,6 +61,7 @@ a {
   padding: 1rem;
   border-radius: 1.5rem;
   background-color: #d7f1fe;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
 }
 
 .custom-card{
@@ -73,9 +74,18 @@ a {
   margin: 4.5rem 1rem;
   opacity: 10%;}
 
+.fa-chevron-right{
+  padding:2.5rem 4rem;
+}
+
 .graph {
   margin:0.5rem;
   padding:1rem;
   border-radius: 1rem;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.progress {
+  background-color: white;
+  box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.2);
 }
