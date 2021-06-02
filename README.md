@@ -1,5 +1,8 @@
 # aswaldev.github.io
 
+Static link:
+https://aswaldev.github.io/
+
 Languages used:
 1. HTML(along with css)
 2. Javascript
