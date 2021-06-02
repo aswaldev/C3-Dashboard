@@ -1,6 +1,6 @@
 # aswaldev.github.io
 
-Static link:
+link:
 https://aswaldev.github.io/
 
 Languages used:
